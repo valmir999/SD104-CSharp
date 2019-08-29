@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_Monty_Hall_Problem", "HW_Monty_Hall_Problem.csproj", "{F4464860-C2C2-4983-9A06-C0646722CD65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4464860-C2C2-4983-9A06-C0646722CD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4464860-C2C2-4983-9A06-C0646722CD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4464860-C2C2-4983-9A06-C0646722CD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4464860-C2C2-4983-9A06-C0646722CD65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A9E9E5E-9B5E-4BF0-8C35-3595FFA5252E}
+	EndGlobalSection
+EndGlobal

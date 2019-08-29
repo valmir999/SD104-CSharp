@@ -1,0 +1,28 @@
+
+        // try
+        // {
+        //// version 1
+        // step 1
+        //        FileStream myFileStream = new FileStream("myfiles5.txt", FileMode.Open, FileAccess.Read);
+
+        // step 2
+
+        //        using (SteamReader myFileReader = new StreamReader(myFileStream))
+        //        {
+        //            step 3
+        //            Console.WriteLine(myFileReader.ReadLine());
+        //        }
+
+        // /// version 2
+        /// step 1
+        // fileName = "c:/..../" + fileName;
+        //stream = new FileStream(fileName,FileMode.Open, FileAccess.Read);
+        // TextIn = new StreamReader(stream); 
+        //        step 2
+        //        using (SteamReader txtIn = new StreamReader(Stream))
+        //        {
+        ///           step 3
+        //            Console.WriteLine(txtIn.ReadToEnd());
+        //        }
+
+        //}
