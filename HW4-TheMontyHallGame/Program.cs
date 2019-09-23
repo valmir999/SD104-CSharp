@@ -4,30 +4,34 @@ namespace MontyHall
 {
     class Program
     {
+        static public int playNum = 0; 
         static void Main(string[] args)
         {
             Random random = new Random();
             int wins = 0;
             int losses = 0;
 
-            Console.WriteLine("Monty Hall Game Show 10,000 times in a For loop");
-            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("     Monty Hall Game Show 10,000 times in a For loop");
+            Console.WriteLine("--------------------------------------------------------");
             Console.WriteLine();
-            Console.WriteLine("     Door 1             Door2              Door2");
-            Console.WriteLine("     ------             -----              -----");
+            Console.WriteLine("  Play#      Door 1             Door2              Door2");
+            Console.WriteLine("             ------             -----              -----");
 
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 100; i++)
             {
                 int changeDoor = 1;
+                playNum++;
 
                 bool result = MontyHallPick(random.Next(3), changeDoor,
                                             random.Next(3), random.Next(1));
                 if (result) wins++;
                 else losses++;
-                System.Threading.Thread.Sleep(500);
+                System.Threading.Thread.Sleep(100);
             }
 
-//            Console.WriteLine("Main thread exits.");
+            Console.WriteLine();
+            Console.WriteLine("SUMMARY");
+            Console.WriteLine("-------");
 
             Console.WriteLine("Wins: {0} Losses: {1}  Total: {2}",
                               wins, losses, wins + losses);
@@ -35,6 +39,10 @@ namespace MontyHall
         }
 
 
+        public static string NumberOfPlay(int num)
+        {
+            return num.ToString("D7");
+        }
 
         public static bool MontyHallPick(int pickedDoor, int changeDoor,
                                       int carDoor, int goatDoorToRemove)
@@ -63,12 +71,12 @@ namespace MontyHall
             if (changeDoor == 0) { win = carDoor == pickedDoor; }
             else { win = carDoor != keepGoat; }
 
-            displayPickedDoor1Win   = "     -win--             -----              -----";
-            displayPickedDoor1Loose = "     ------             -win-              -----";
-            displayPickedDoor2Win   = "     ------             -----              -win-";
-            displayPickedDoor2Loose = "     loose-             -----              -----";
-            displayPickedDoor3Win   = "     ------             loose              -----";
-            displayPickedDoor3Loose = "     ------             -----              loose";
+            displayPickedDoor1Win   = "     -win-             -----              -----";
+            displayPickedDoor1Loose = "     -----             -win-              -----";
+            displayPickedDoor2Win   = "     -----             -----              -win-";
+            displayPickedDoor2Loose = "     loose             -----              -----";
+            displayPickedDoor3Win   = "     -----             loose              -----";
+            displayPickedDoor3Loose = "     -----             -----              loose";
 
 
             if (pickedDoor == 1)
@@ -87,7 +95,7 @@ namespace MontyHall
                 else displayPickedDoorResult = displayPickedDoor3Loose;
             }
 
-            Console.WriteLine(displayPickedDoorResult);
+            Console.WriteLine(NumberOfPlay(playNum)+ "  " + displayPickedDoorResult);
             return win;
         }
 

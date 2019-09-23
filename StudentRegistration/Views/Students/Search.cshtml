@@ -1,0 +1,52 @@
+﻿@model StudentRegistration.Models.Student
+
+@{
+    ViewData["Title"] = "Search";
+}
+<font color="blue">
+    <h3>@ViewBag.Description</h3>
+</font>
+
+@if (Model != null)
+{
+    <div>
+        <hr />
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.cellphone)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.cellphone)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.age)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.age)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.EmailAddress)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.EmailAddress)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+}
+else
+{
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+}

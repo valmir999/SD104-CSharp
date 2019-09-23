@@ -1,0 +1,12 @@
+@using (Html.BeginForm("Search", "Students", FormMethod.Get))
+{
+    <form method="get" action="/Students/Search">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-brand">
+                <font color="blue">
+                    @Html.TextBox("search") <text class="text-danger" color="blue"></text> <input type="submit" value="Search by Email" />
+                </font>
+            </li>
+        </ul>
+    </form>
+}

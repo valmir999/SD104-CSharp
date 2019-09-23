@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW4-Alternates-MultiplicationTable", "HW4-Alternates-MultiplicationTable.csproj", "{53A1C473-4769-473B-8CD3-3CFBCD120648}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53A1C473-4769-473B-8CD3-3CFBCD120648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A1C473-4769-473B-8CD3-3CFBCD120648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A1C473-4769-473B-8CD3-3CFBCD120648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A1C473-4769-473B-8CD3-3CFBCD120648}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C6604F4-CF89-49BA-A544-5C4CF97192F3}
+	EndGlobalSection
+EndGlobal

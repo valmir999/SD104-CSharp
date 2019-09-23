@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MidTermQuiz-Method", "MidTermQuiz-Method.csproj", "{276F5A90-900D-4F1B-8ECB-DC8ED6AEAC55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{276F5A90-900D-4F1B-8ECB-DC8ED6AEAC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276F5A90-900D-4F1B-8ECB-DC8ED6AEAC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276F5A90-900D-4F1B-8ECB-DC8ED6AEAC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276F5A90-900D-4F1B-8ECB-DC8ED6AEAC55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEDECF7F-3CE6-4ECC-89CB-947D688F62CD}
+	EndGlobalSection
+EndGlobal
