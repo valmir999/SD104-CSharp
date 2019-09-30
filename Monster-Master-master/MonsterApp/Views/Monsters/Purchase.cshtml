@@ -1,0 +1,50 @@
+﻿@model MonsterApp.Context.Monster
+
+@{
+    ViewData["Title"] = "Purchase Monster";
+}
+
+<h2>Purchase Monster</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Purchase">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MonsterId" />
+
+            @if (@ViewBag.AlreadyPurchased == false)
+            {
+                @if (ViewBag.GoldCoins >= 2)
+                {
+                    <div class="form-group">
+                        You have enough gold to purchase @Html.DisplayFor(model => model.Name)
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Purchase" class="btn btn-default" />
+                    </div>
+                }
+                else
+                {
+                    <div class="form-group">
+                       You do not have enough Gold to purchase a Monster. You need atleast 2 Gold coins to purchase.                    
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="form-group">
+                    You have already purchased @Html.DisplayFor(model => model.Name)
+                </div>
+            }
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

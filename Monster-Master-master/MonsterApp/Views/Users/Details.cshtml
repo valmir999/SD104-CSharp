@@ -1,0 +1,47 @@
+﻿@model MonsterApp.Context.User
+
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<h2>User Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmailAddress)
+        </dd>       
+        <dt>
+            @Html.DisplayNameFor(model => model.Gold)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gold)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DateAccountCreated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DateAccountCreated)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.UserId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
